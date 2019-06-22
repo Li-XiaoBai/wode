@@ -52,7 +52,21 @@
         a:hover{
             color:cadetblue;
         }
-       
+        /*相邻兄弟选择器*/
+        .aa + .bb 
+        {
+            color:blueviolet;
+        }
+        /*群组选择器 */
+        .aa,.bb,.cc
+        {
+            color:chartreuse;
+        }
+        /*伪元素选择器*/
+        .dd::before
+        {
+            content: 'aa'
+        }
     </style>
 </head>
 
@@ -98,7 +112,7 @@
         <p>33333</p>
     </div> -->
     <a href="http://www.baidu.com">baidu </a>
-
+    <div>class='aa'    </div>
 
 
 
