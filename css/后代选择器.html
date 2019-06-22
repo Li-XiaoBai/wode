@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>  
+    
+        <style>
+            h1
+            {
+                color: aqua;
+                font-size:14px;
+                background: rgb(56, 15, 204);
+            }
+            div
+            {
+            color:white;
+            background: greenyellow;
+            }
+            /*后代选择器*/
+            /*   .祖辈  .后辈  */            
+            .parent .child
+            {
+                color: yellow;
+            }   
+        </style>
+    </head>
+
+    <body>
+        <div class="parent">
+            11111
+            <div>
+                222222
+                <div class="child">
+                    3333
+                </div>
+            </div>
+            <div class="child">
+                4444
+            </div>
+        </div>
+        <h1>This is a <em>important</em> heading</h1>
+        <h2 style="color: aqua;background :brown;font-size:41px;">我想你了，煜儿</h2>
+        <p>This is a <em>important</em> paragraph.</p>
+    </body>
+</html>
