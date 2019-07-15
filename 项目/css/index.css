@@ -1,8 +1,4 @@
 
-*{
-    margin: 0;
-    padding: 0;
- }
 .header{
     height: 0.48rem;
     background: #f00;
@@ -24,5 +20,42 @@
 .message{
     width: 0.28rem;
     height: 0.3rem;
-    background-size: 0.3rem 0.3rem;
+}
+.zhibo,.zhibo img{
+    width: 7.5rem;
+    height: 3.9rem;
+    display: block;
+}
+.menu{
+    display: flex;
+    padding: 0 0.45rem;
+    justify-content: space-between;
+}
+.menu li{
+    width: 1.2rem;
+    font-size: 0.2rem;
+    text-align: center;
+}
+.menu li img{
+    width: 0.8rem;
+    height: 0.8rem;
+}
+.guanggao{
+    width: 7.5rem;
+    height: 1.8rem;
+    padding : 0 0.2rem 0 0.2rem;
+}
+.guanggao,.guanggao img{
+    width: 7.1rem;
+    height: 1.4rem;
+    display: block;
+}
+.tuangou{
+    width: 7.0rem;
+    height: 1.0rem;
+    padding:0 0.2rem 0 0.2rem;
+}
+.tuangou li img{
+    width: 0.5rem;
+    height: 0.5rem;
 }
