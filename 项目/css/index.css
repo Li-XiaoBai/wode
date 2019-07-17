@@ -55,7 +55,50 @@
     height: 1.0rem;
     padding:0 0.2rem 0 0.2rem;
 }
-.tuangou li img{
+.tuangou-title{
+    display: flex;
+}
+.tuangou-title-tu1 img{
     width: 0.5rem;
     height: 0.5rem;
 }
+.tuangou-title-text{
+    flex:1;
+}
+.tuangou-title-text h3{
+    font-size: 0.28rem ;
+    color:#333;
+}
+.tuangou-title-text p{
+    font-size: 0.18rem ;
+    color:#999;
+}
+
+.tuangou-title-tu2 img{
+    width: 0.14rem;
+    height: 0.24rem;
+}
+.tuangou-content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.tuangou-content li{
+    width: 3.5rem;
+    height: 1rem;
+}
+.tuangou-content li img{
+    width: 2.3rem;
+    height: 2.3rem;
+}
+.tuangou-content li p{
+    width: 2.2rem;
+    line-height: 0.24rem;
+    font-size: 0.24rem;
+}
+.tuangou-price{
+    font-size: 0.24rem;
+    color:#EF1C00;
+    ￥450
+}
+    
