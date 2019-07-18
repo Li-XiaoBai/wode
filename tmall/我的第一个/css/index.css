@@ -273,12 +273,15 @@
     height: 14px;
     line-height: 12px;
 }
-.nvzhuang-fenlei-tu{
-
+.nvzhuang-fenlei-title h1{
+    font-size: 14px;
+    width: 60px;
+    overflow: hidden;
 }
 .nvzhuang-fenlei-title img{
     width: 14px;
-    height: 21.6px;
+    height: 22px;
+    float: left;
 }
 .nvzhuang-fenlei-text{
     width: 418px;
@@ -291,20 +294,17 @@
 
 
 .nvzhuang-logo{
-    width: 20px;
+    width: 200px;
     height: 500px;
     background: #0000ff;
 }
 .nvzhuang-logo-tu{
-    display: flex;
-    justify-content: space-between; 
-    flex-direction: row; 
+    display: flex; 
     background: #333
 }
 .nvzhuang-logo-tu li{
     width: 93px;
     height: 47px;
-    justify-content: space-between;     
 }
 .nvzhuang-logo-tu li img{
     width: 73px;
