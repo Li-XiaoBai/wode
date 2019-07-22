@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // 1.	编写程序．通过用户输入的年龄判断是哪个年龄段的人（儿童：年龄＜14；青少年：14<=年龄＜24；青年：24<年龄＜40; 中年：40＜=年龄＜60; 老年：年龄>=60），并在页面上输出判断结果。
+            // var num=prompt("请输入年龄",12);
+            // if(num<14){
+            //     console.log("儿童");
+            // }
+            //     else if(14<=num && num<24){
+            //         console.log("青少年");
+            //     }
+            //         else if(num>=24&&num<40){
+            //             console.log("青年");
+            //         }
+            //             else if(num>=40&&num<60){
+            //                 console.log("中年");
+            //             }
+            //                 else if(num>=60){
+            //                     console.log("老年");
+            //                 }
+
+            //2.	编写程序，艰据用户输入的一个数字(0~6)．通过警示对话框显示对应的星期几(0: 星期日; 1: 星期一;……6: 星期六;)
+            // var num=prompt("请输入数字");
+            // num*=1;
+            // switch(num){
+            //     case(0):
+            //     alert("星期日");
+            //     break;
+            //     case(1):
+            //     alert("星期一");
+            //     break;
+            //     case(2):
+            //     alert("星期二");
+            //     break;
+            //     case(3):
+            //     alert("星期三");
+            //     break;
+            //     case(4):
+            //     alert("星期四");
+            //     break;
+            //     case(5):
+            //     alert("星期五");
+            //     break;
+            //     case(6):
+            //     alert("星期六");
+            //     break;
+            //     default:
+            //     alert("输入错误");
+            // }
+
+            //3.	编写程序，计算10!(即 1*2*3＊·…10)的结果(10的阶乘)。
+            /*
+	        var sum=1;
+	        for(i=1;i<=10;i++){
+                sum *= i;
+            } 
+	        console.log(sum);
+            */
+
+            //4.	编写程序，计算 1!+2!+3!+…..＋10！的结果。
+            // var sum=1;
+            // var he=0;
+            // for(i=1;i<=10;i++){
+            //     sum*=i;
+            //     he+=sum;
+            // }
+            // console.log(he);
+
+            //5.	在页面上输出如下数字图案。
+                    // 1
+                    // 1 2
+                    // 1 2 3
+                    // 1 2 3 4
+                    // 1 2 3 4 5
+            // 其中，每行的数字之间有一个空格间隔。
+            // var line;
+            // line=5;
+            // for(i=1;i<=line;i++){//行
+            //     //document.write("");//在HTML中显示
+            //     for(var j=1;j<=i;j++){//
+            //         document.write(j+"&nbsp;");//&nbsp;是空格
+            //     }
+            //     document.write("</br>");//强制换行
+            // }
+
+            //6.	在页面上输出如下图案。
+                        //     *
+                        //    * *
+                        //   * * *
+                        //  * * * *
+                        // * * * * *
+                    // 其中，每行的星号"*"之间有一个空格间隔
+
+            // var line;
+            // line=5;
+            // for(i=1;i<=line;i++){//行
+            //     //document.write("");//在HTML中显示
+            //     for(var n=1;n<=5-i;n++){//每行循环输出5-该行数的空格
+            //             document.write("&nbsp;");//&nbsp;是空格
+            //         }
+                // for(var n=5;n>i;n--){//每行循环输出5-该行数的空格
+                //         document.write("&nbsp;");//&nbsp;是空格
+                //     }
+            //     for(var j=1;j<=i;j++){
+            //         document.write("&nbsp;"+'*');
+            //     }
+            //     document.write("</br>");//强制换行
+            // }
+
+            // 7.	有一个三位数x，被4除余2，被7除余3，被9除余5，请求出这个数
+            // var x;
+            // for(x=100;x<=999;x++){
+            //     if(x%4==2&&x%7==3&&x%9==5){
+            //     console.log(x);
+            //     document.write(x);
+            //     document.write("<br/>");
+            // }
+            // }
+            // document.write(x);//最终X的结果是1000
+
+            //8.	求所有满足条件的四位数ABCD，它是13的倍数，且第3位数加上第2位数等于第4位数（即：A=B+C）。（提示：对于四位数的整数x，通过Math.floor(x/1000)可求出第4位的数字，其他位数的提取也类似）
+            
+            var x;
+            for(x=1000;x<=9999;x++){
+                A=x/1000;
+                B=Math.floor(x/100)%10;
+                C=Math.floor(x/10)%100;
+                D=Math.floor(x/1)%1000;
+                if(A=B+C&&x%13==0){
+                    document.write(x);
+                    document.write("<br/>");
+                }
+            }
+        </script>
+    </body>
+</html>
