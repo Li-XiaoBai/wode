@@ -9,6 +9,39 @@
     <body>
         <script>
         
+        //3.	编写一个判断某个非负整数是否能够同时被3,5,7整除的函数，然后在页面上输出1~1000之间所有能同时被3,5,7整除的整数，并要求每行显示6个这样的数。
+        // var x;
+        // var count=0;
+        // for (x=0;x<=1000;x++){
+        //     if(x%3==0&&x%5==0&&x%7==0){
+        //         document.write(x+" ");
+        //         count++;
+        //         if(count==6){
+        //             document.write("<br/>");
+        //         }
+        //     }
+        // }
+
+        //4.	在页面上编程输出100~1000之间的所有素数，并要求每行显示6个素数。
+        var x;
+        var count=0;
+        function isPrime(n){
+            for(var i=2;i<=Math.sqrt(n);i++){//math.sqrt平方根
+                if(n%i==0){
+                    return false;
+                }   
+            }
+            return true;
+        }
+        for(x=100;x<=1000;x++){
+            if(isPrime(x)){
+                document.write(x+" ");
+                count++;
+                if(count%6==0){
+                    document.write("<br/>");
+                }
+            }
+        }
         </script>
     </body>
 </html>
