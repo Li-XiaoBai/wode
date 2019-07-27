@@ -23,25 +23,120 @@
         // }
 
         //4.	在页面上编程输出100~1000之间的所有素数，并要求每行显示6个素数。
-        var x;
-        var count=0;
-        function isPrime(n){
-            for(var i=2;i<=Math.sqrt(n);i++){//math.sqrt平方根
-                if(n%i==0){
-                    return false;
-                }   
-            }
-            return true;
-        }
-        for(x=100;x<=1000;x++){
-            if(isPrime(x)){
-                document.write(x+" ");
-                count++;
-                if(count%6==0){
-                    document.write("<br/>");
+        // var x;
+        // var count=0;
+        // function isPrime(n){
+        //     for(var i=2;i<=Math.sqrt(n);i++){//math.sqrt平方根
+        //         if(n%i==0){
+        //             return false;
+        //         }   
+        //     }
+        //     return true;
+        // }
+        // for(x=100;x<=1000;x++){
+        //     if(isPrime(x)){
+        //         document.write(x+" ");
+        //         count++;
+        //         if(count%6==0){
+        //             document.write("<br/>");
+        //         }
+        //     }
+        // }
+
+        //5.	编写一个非递归函数factorial(n)，计算12!-10!的结果。
+        // var a=0;
+        // function factorial(n){
+        //     var sum=1;
+        //     for(var i=1;i<=n;i++){
+        //         sum*=i;
+        //     }
+	    //     console.log(sum);
+        //     return sum;
+        // }
+        // a=factorial(12)-factorial(10);
+        // document.write(a);
+        
+        //7.	斐波纳契（Fibonacci）数列的第一项是1，第二项是1，以后各项都是前两项的和。试用递归函数和非递归函数各编写一个程序，求斐波纳契数列第N项的值。
+        //7.1  递归
+        // function Fibonacci(n){
+        //     if(n>2){
+        //         return Fibonacci(n-1) + Fibonacci(n-2);
+        //     }
+        //     else{
+        //         return 1;
+        //     }
+        // }
+        // console.log(Fibonacci(10));
+        // document.write(Fibonacci(10));
+
+        //7.2
+        
+
+        //8.	编写函数，用下面的公式计算π的近似值。
+ 
+        //在页面上输出当n=100，500，1000，10000时π的近似值。
+
+        // function PI(n){
+        //     var sum=1;
+        //     for(var i=2;i<=n;i++){
+        //         if(i<=0){
+        //             return false;
+        //         }
+        //         else{
+        //             if(i%2==0){
+        //                 sum-=1/(2*i-1);
+        //             }
+        //             else{
+        //                 sum+=1/(2*i-1);
+        //             }
+        //         }
+        //     }
+        //     return 4*sum ;
+        // }         
+        // document.write("当n=100时Π的近似值为: "+PI(100));
+        // document.write("<br/>");
+        // document.write("当n=500时Π的近似值为: "+PI(500)); 
+        // document.write("<br/>");
+        // document.write("当n=1000时Π的近似值为: "+PI(1000)); 
+        // document.write("<br/>");
+        // document.write("当n=10000时Π的近似值为: "+PI(10000));
+        // document.write("<br/>"); 
+
+        //9.	利用全局变量和函数，设计模拟幸运数字机游戏。设幸运数字为8，每次由计算机随机产生3个1-9之间(包括1和9）的随机数，当这3个随机数中有一个数字为8时，就算赢了一次，要求利用函数计算获胜率。
+        var x = Math.floor(Math.random()*9+1);
+        var y = Math.floor(Math.random()*9+1);
+        var z = Math.floor(Math.random()*9+1);
+        document.write(x);
+        document.write("<br/>");
+        document.write(y);
+        document.write("<br/>");
+        document.write(z);
+        document.write("<br/>");
+        function f(){
+            // x = Math.floor(Math.random()*9+1);
+            // y = Math.floor(Math.random()*9+1);
+            // z = Math.floor(Math.random()*9+1);
+            if(x==8||y==8||z==8){
+                document.write("赢了");
+                document.write("<br/>");
+                if((x==8&&y!=8&&z!=8)||(y==8&&x!=8&&z!=8)||(z==8&&x!=8&&y!=8)){
+                    var a=(1/3)*(1/9)*(8/9)*(8/9);
+                    document.write("胜率为："+a);
                 }
+                else if((x==8&&y==8&&z!=8)||(x==8&&z==8&&y!=8)||(z==8&&y==8&&x!=8)){
+                    var b=(2/3)*(1/9)*(1/9)*(8/9);
+                    document.write("胜率为："+b);
+                } 
+                else if(x==8&&y==8&&z==8){
+                    var b=(1/9)*(1/9)*(1/9);
+                    document.write("胜率为："+c);
+                }           
+            }
+            else{
+                document.write("You are lose.....");
             }
         }
+        f();
         </script>
     </body>
 </html>

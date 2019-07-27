@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>事件</title>
+</head>
+<body>
+    <div id="div1">hahah</div>
+    <button id="btn">click</button>
+    <script>
+        var oBtn = document.getElementById('btn');
+        //只取一次
+        //var oDiv = document.getElementById('div1');
+
+
+        /*对象.事件=function(){
+
+        }
+        为固定格式*/
+
+
+        oBtn.onclick = function(){
+            // div变色
+            // 每次都取
+            var oDiv = document.getElementById('div1');
+            oDiv.style.background = "red";
+        }
+
+        
+    
+        
+    </script>
+    
+</body>
+</html>
